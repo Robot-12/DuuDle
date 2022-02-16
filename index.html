@@ -1,5 +1,111 @@
-<!--<iframe src="http://polskirpdiscord.pl/internet/browser.php" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe>
---><object data="http://polskirpdiscord.pl/internet/browser.php" width="100%" height="100%">
-    <embed src="http://polskirpdiscord.pl/internet/browser.php" width="100%" height="100%"> </embed>
-    Error: Embedded data could not be displayed.
-</object>
+<html>
+    <head>
+        <meta charset="utf-8" />
+	<link rel="shortcut icon" href="imige/Duudle.png">
+	<title>Duudle</title>
+	<meta name="description" content="Duudle" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400i|Roboto+Condensed:400,700|Amatic+SC|Cormorant+Garamond:300,400|Roboto+Slab:700&amp;subset=latin-ext" rel="stylesheet">
+
+	
+	<link rel="stylesheet" href="css/browser.css" type="text/css">
+    </head>
+    <body>
+        <div id="pasek_gura">
+			<div id="logo">
+                <a class="active" href="index.html"><div><img src="imige/Duudle.png" width="185" height="90"></div></a>
+			 </div>
+			 	<a href="Regulamin.html">
+			    <div id="Regulamin">
+					<h1>Kontakt</h1>
+			    </div>
+			 </a>
+			 <a href="Wspierajacy.html">
+			    <div id="Wspierajoncy">
+					<h1>informacje</h1>
+			    </div>
+			 </a>
+			<a href="index.html">
+				<div id="home">
+					<h1>Home</h1>
+				</div>
+			</a>
+		</div>
+        <div id="slait"></div>
+        <script>
+            document.getElementById("slait").innerHTML='  <img src="imige/slait2.jpg" width="100%" height="100%" class="imgslot">';
+            const msg = ['<img src="imige/slait3.jpg" width="100%" height="100%" class="imgslot">', '<img src="imige/slait1.jpg" width="100%" height="100%" class="imgslot">', '<img src="imige/slait2.jpg" width="100%" height="100%" class="imgslot">'];
+                        function view(messages, elementSelector, time) {
+              const max = messages.length - 1;
+              let i = 0;
+                        
+              const interval = setInterval(() => {
+                if (i < max) {
+                  i += 1;
+                } else {
+                  i = 0;
+                }
+                document.getElementById("slait").innerHTML=msg[i];
+              }, time);
+            }
+            
+            // Wywołanie funkcji:
+            view(msg, '#result', 5000);
+
+
+            // const timer = ms => new Promise(res => setTimeout(res, ms))
+            // document.getElementById("slait").innerHTML='  <img src="imige/slait3.jpg" width="100%" height="100%" class="imgslot">';
+            // async function load () {
+            // for (let i=0; i<3; i++) {
+            //     console.log(i)
+            //     await timer(500);
+            //     if(i==0)
+            //     {
+            //             document.getElementById("slait").innerHTML=' <img src="imige/slait1.jpg" width="100%" height="100%" class="imgslot">';
+            //     }
+            //     else if(i==1)
+            //     {
+            //             document.getElementById("slait").innerHTML='  <img src="imige/slait2.jpg" width="100%" height="100%" class="imgslot">';
+            //     }
+            //     else if(i==2)
+            //     {
+            //             document.getElementById("slait").innerHTML='  <img src="imige/slait3.jpg" width="100%" height="100%" class="imgslot">';
+            //             i=0
+            //     }
+            //     else
+            //     {
+            //         i=0
+            //     }
+            // }
+            //}
+        </script><br>
+
+        <!-- <div class="elements-list slider4" id="slider4">
+            <article class="element">
+                <h2 class="element-title">
+                    1 Lorem ipsum dolor sit.
+                </h2>
+                <div class="element-text">
+                    <img src="imige/slait1.jpg" width="100%" height="75%">
+                </div>
+            </article>
+            <article class="element">
+                <h2 class="element-title">
+                    2 Lorem ipsum dolor sit.
+                </h2>
+                <div class="element-text">
+                    <img src="imige/slait2.jpg" width="100%" height="75%">
+                </div>
+            </article>
+            <article class="element">
+                <h2 class="element-title">
+                    3 Lorem ipsum dolor sit.
+                </h2>
+                <div class="element-text">
+                    <img src="imige/slait3.jpg" width="100%" height="75%">
+                </div>
+            </article>
+        </div> -->
+    </body>
+</html>
