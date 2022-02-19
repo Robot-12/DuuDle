@@ -563,17 +563,33 @@ font-size: 100px;;
 
 .imgslot
 {
-  position: absolute; 
+    object-fit: contain;
+    width:100%;
+    height:100%;
 }
     
 }
 
 #slait
 {
-  padding-left: 10%;
-  width:80%;
-  height:90%;
-  text-align: center;
-  font-weight:900;
+  min-height: 100px;
+  min-width: 100px;
+  flex-grow: 20;
+  display: flex;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
 }
 
+
+#contener
+{
+    width: 100%;
+    height: calc(100% - 101px);
+    display: flex;
+    justify-content: end;
+    justify-self: center;
+}
