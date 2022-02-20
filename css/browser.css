@@ -560,13 +560,6 @@ font-size: 100px;;
     position:relative;
     Top:-20px;
 }
-
-.imgslot
-{
-    object-fit: contain;
-    width:100%;
-    height:100%;
-}
     
 }
 
@@ -592,4 +585,34 @@ font-size: 100px;;
     display: flex;
     justify-content: end;
     justify-self: center;
+}
+
+#contener2
+{
+    background-color: #393939;
+    height: 100%;
+    display: flex;
+    color: #ececec;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+#contener2 img
+{
+    flex-grow: 1;
+    padding-right: 2.5%;
+    max-width:100%;
+}
+
+#text{
+    flex-grow: 1;
+    font-size: 4px;
+    font-size: 1.5vw;
+    padding-left: 2.5%;
+}
+#text h1
+{
+    font-size: 8px;
+    font-size: 3vw;
 }
